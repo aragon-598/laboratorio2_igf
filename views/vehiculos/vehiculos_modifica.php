@@ -51,8 +51,11 @@
 					<label for="color">Color</label>
 					<input type="text" class="form-control" id="color" name="color" value="<?php echo $data["vehiculos"]["color"]?>" />
 				</div>
-				
-				<button id="guardar" name="guardar" type="submit" class="btn btn-primary">Guardar</button>
+				<br>
+				<div class="mb-3">
+					<button id="guardar" name="guardar" type="submit" class="btn btn-primary">Guardar</button>
+					<a href="/mvc/" class="btn btn-secondary">Cancelar</a>
+				</div>
 				
 			</form>
 		</body>

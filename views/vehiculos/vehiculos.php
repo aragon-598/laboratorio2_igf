@@ -31,8 +31,7 @@
 							<th>Modelo</th>
 							<th>Año</th>
 							<th>Color</th>
-							<th>Editar</th>
-							<th>Eliminar</th>
+							<th>Actions</th>
 						</tr>
 					</thead>
 					
@@ -44,8 +43,10 @@
 							echo "<td>".$dato["modelo"]."</td>";
 							echo "<td>".$dato["anio"]."</td>";
 							echo "<td>".$dato["color"]."</td>";
-							echo "<td><a href='index.php?c=vehiculos&a=modificar&id=".$dato["id"]."' class='btn btn-warning'><i class='bi bi-pencil'></i> Modificar</a></td>";
-							echo "<td><a href='index.php?c=vehiculos&a=eliminar&id=".$dato["id"]."' class='btn btn-danger'><i class='bi bi-trash'></i> Eliminar</a></td>";
+							echo "<td>";
+							echo "<a href='index.php?c=vehiculos&a=modificar&id=".$dato["id"]."' class='btn btn-warning'><i class='bi bi-pencil'></i></a>";
+							echo "<a href='index.php?c=vehiculos&a=eliminar&id=".$dato["id"]."' class='btn btn-danger'><i class='bi bi-trash'></i></a>";
+							echo "</td>";
 							echo "</tr>";
 						}
 						?>
